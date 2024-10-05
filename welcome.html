@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Rent 'n Repair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Adding texture */
+            background-color: #8901a5; /* Base background color */
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Inner texture */
+            background-color: #007694; /* Inner container color */
+        }
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .button-grid button {
+            background-color: #8901a5;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .button-grid button:hover {
+            background-color: #007694;
+        }
+        .button-grid button i {
+            margin-right: 10px; /* Space between icon and text */
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        /* Profile, Logout, and About Us Button Styles */
+        .top-right-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .top-right-buttons button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .top-right-buttons button i {
+            margin-right: 6px; /* Space between icon and text for top right buttons */
+        }
+        .top-right-buttons button:hover {
+            background-color: #007694;
+        }
+        /* About Us Button Styles */
+        .about-us-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .about-us-button i {
+            margin-right: 6px; /* Space between icon and text for About Us button */
+        }
+        .about-us-button:hover {
+            background-color: #007694;
+        }
+        /* Contact Us Button Styles */
+        .contact-us-button {
+            position: absolute;
+            top: 20px;
+            left: 150px; /* Adjust left position to space between About Us and Contact Us */
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .contact-us-button i {
+            margin-right: 6px; /* Space between icon and text for Contact Us button */
+        }
+        .contact-us-button:hover {
+            background-color: #007694;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Us Icon -->
+    <button class="about-us-button" onclick="location.href='about.php'">
+        <i class="fas fa-info-circle"></i> About Us
+    </button>
+    
+    <!-- Contact Us Icon -->
+    <button class="contact-us-button" onclick="location.href='contactus.html'">
+        <i class="fas fa-envelope"></i> Contact Us
+    </button>
+
+    <!-- Profile and Logout Icons -->
+    <div class="top-right-buttons">
+        <button onclick="location.href='login.php'">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Rent 'n Repair</h1>
+        <div class="button-grid">
+            <button onclick="location.href='house_details.php'">
+                <i class="fas fa-home"></i> Add House
+            </button>
+            <button onclick="location.href='house_list.php'">
+                <i class="fas fa-door-open"></i> Rent House
+            </button>
+            <button onclick="location.href='technicians.php'">
+                <i class="fas fa-tools"></i> Hire Technician
+            </button>
+            <button onclick="location.href='technician_registration.php'">
+                <i class="fas fa-briefcase"></i> Apply for Work
+            </button>
+            <button class="full-width" onclick="location.href='reviews.php'">
+                <i class="fas fa-comments"></i> Reviews
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

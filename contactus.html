@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #007694 0%, #8901a5 100%); /* Gradient background */
+            color: #ffffff; /* White text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            position: relative; /* Position relative for home icon */
+        }
+        h1 {
+            color: #09484f; /* Heading color */
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            color: #333;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Fixed width */
+        }
+        .contact-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center; /* Align items vertically centered */
+        }
+        a {
+            color: #007694; /* Dark teal for links */
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        a:hover {
+            text-decoration: underline; /* Underline effect on hover */
+        }
+        .icon {
+            color: #007694; /* Dark teal for icons */
+            font-size: 24px; /* Larger icon size */
+        }
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #ffff; /* Set icon color to gold */
+            text-decoration: none;
+        }
+        .home-icon:hover {
+            color: #ffd700; /* Color change on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="welcome.html" class="home-icon"><i class="fas fa-home"></i></a> <!-- Home icon link -->
+
+    <div class="contact-info">
+        <h1>Contact Us</h1>
+        <div class="contact-item">
+            <i class="fas fa-phone icon"></i>
+            <span>Phone Number: <strong>01321868891</strong></span>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-facebook icon"></i>
+            <span>Facebook: <a href="https://www.facebook.com/RentNRent" target="_blank">Rent 'N Repair</a></span>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-whatsapp icon"></i>
+            <span>WhatsApp: <strong>01321868891</strong></span>
+        </div>
+    </div>
+
+</body>
+</html>
